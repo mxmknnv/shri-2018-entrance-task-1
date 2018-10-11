@@ -1,0 +1,40 @@
+{
+  "name": "shri-2018-entrance-task-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "Maxim Kononov",
+  "license": "ISC",
+  "engines": {
+    "node": "8.11.4"
+  },
+  "scripts": {
+    "start": "nodemon index.js",
+    "start-test": "NODE_ENV=test nodemon index.js",
+    "reset-db": "rm -f ./db.sqlite3 && node create-mock-data.js",
+    "reset-db-test": "rm -f ./db-test.sqlite3 && NODE_ENV=test node create-mock-data.js",
+    "test": "NODE_ENV=test node create-mock-data.orig.js && NODE_ENV=test jest"
+  },
+  "jest": {
+    "testRegex": "/tests/.*.spec.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.4",
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2",
+    "graphql-date": "^1.0.3",
+    "graphql-tools": "^2.24.0",
+    "sequelize": "^4.38.0",
+    "sqlite3": "^3.1.13"
+  },
+  "devDependencies": {
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "jest": "^22.4.4",
+    "nodemon": "^1.18.4",
+    "request": "^2.88.0",
+    "request-promise-native": "^1.0.5"
+  }
+}
