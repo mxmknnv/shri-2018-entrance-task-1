@@ -1,5 +1,6 @@
 ![Project Logo](https://github.com/mxmknnv/shri-2018-entrance-task-3/blob/master/screenshots/logo.png)
 # Приложение для создания и редактирования информации о встречах сотрудников (back-end)
+*** Полная версия загружена на heroku и доступна [онлайн](https://shri-2018.herokuapp.com/). ***
 
 Написано для Node.js 8 и использует библиотеки:
 * express
